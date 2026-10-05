@@ -1,4 +1,6 @@
-# Industrial Automata website
+# industrial-automata-web
+
+The website design and code repo for the Industrial Automata website, **industrial-automata.com**.
 
 The company site: [Astro](https://astro.build) static pages, served from a certified-assets canister
 on the Internet Computer (`@dfinity/static-site` recipe). Every response is certified by the canister
@@ -40,8 +42,8 @@ icp network stop
 
 1. **Mainnet identity with cycles.** Create a password-protected identity with `icp identity new mainnet --storage password`. Send it ICP from the NNS dapp (address from `icp identity account-id --identity mainnet`), then convert the ICP to cycles (see the `cycles-management` ICP skill).
 2. **Deploy.** Run `icp deploy -e ic --identity mainnet`. The site is then at `https://<canister-id>.icp.net`. The canister ID is stored in `.icp/data/`, which **is** committed.
-3. **Domain file.** Create `public/.well-known/ic-domains` listing the domain(s), e.g. `industrialautomata.ie` and `www.industrialautomata.ie`. Set `site:` in `astro.config.mjs` and redeploy.
-4. **Cloudflare DNS** (per domain):
+3. **Domain file.** Already in place: `public/.well-known/ic-domains` lists `industrial-automata.com` and `www.industrial-automata.com`, and `site:` is set in `astro.config.mjs`.
+4. **Cloudflare DNS** for `industrial-automata.com` and `www.industrial-automata.com`:
    - Set records to **DNS only** (grey cloud), and **disable Universal SSL / edge certificates**. Otherwise they interfere with the IC's certificate issuance.
    - Add three records:
      - `CNAME <domain> → <domain>.icp1.io` (Cloudflare flattens this at the apex)
