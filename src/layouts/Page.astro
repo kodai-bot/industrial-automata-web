@@ -1,0 +1,16 @@
+---
+// Layout for Markdown pages in src/pages/*.md.
+// Frontmatter: title (required), description (optional), lede (optional intro line).
+import Base from './Base.astro';
+
+const { frontmatter } = Astro.props;
+---
+<Base title={frontmatter.title} description={frontmatter.description}>
+  <article class="wrap">
+    <div class="prose">
+      <h1>{frontmatter.title}</h1>
+      {frontmatter.lede && <p class="lede">{frontmatter.lede}</p>}
+      <slot />
+    </div>
+  </article>
+</Base>

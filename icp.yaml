@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://github.com/dfinity/icp-cli/raw/refs/tags/v1.6.0/docs/schemas/icp-yaml-schema.json
+
+canisters:
+  - name: website
+    recipe:
+      type: "@dfinity/static-site@v0.4.0"
+      configuration:
+        build:
+          - npm ci
+          - npm run build
+        dir: dist
+
+networks:
+  # Port 8000 (icp-cli default) is taken on this machine; use dfx's old 4943.
+  - name: local
+    mode: managed
+    gateway:
+      port: 4943

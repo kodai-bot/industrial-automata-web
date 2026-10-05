@@ -1,0 +1,59 @@
+---
+import '../styles/global.css';
+import Gear from '../components/Gear.astro';
+import { SITE, NAV } from '../site';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title, description = SITE.description } = Astro.props;
+const pageTitle = title ? `${title} | ${SITE.name}` : SITE.name;
+const path = Astro.url.pathname;
+const year = new Date().getFullYear();
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/logo.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/" aria-label={`${SITE.name}, home`}>
+          <Gear size={34} />
+          <span class="wordmark"><strong>Industrial</strong><span>AUTOMATA</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Main">
+          <ul>
+            {NAV.map((item) => (
+              <li>
+                <a href={item.href} aria-current={path.startsWith(item.href) ? 'page' : undefined}>
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>© {year} {SITE.name} · {SITE.registration}</p>
+        <p>Served from the Internet Computer</p>
+      </div>
+    </footer>
+  </body>
+</html>

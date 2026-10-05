@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../site';
+---
+<Base title="Contact" description={`Contact ${SITE.name}.`}>
+  <article class="wrap">
+    <div class="prose">
+      <h1>Contact</h1>
+      <p class="lede">For consulting enquiries, collaborations or questions about the research.</p>
+      <p><a class="button primary" href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
+      <h2>Details</h2>
+      <p>{SITE.name}<br />{SITE.registration}<br />{SITE.location}</p>
+    </div>
+  </article>
+</Base>

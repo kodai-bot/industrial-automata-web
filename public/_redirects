@@ -1,0 +1,3 @@
+# Redirect/rewrite rules for the certified-assets canister (Netlify _redirects syntax).
+# A missing build asset gets a real 404 instead of HTML.
+/_astro/*   /404.html   404
