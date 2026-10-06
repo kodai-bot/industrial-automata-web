@@ -5,11 +5,13 @@ export const SITE = {
   description:
     'Industrial Automata is an Irish systems consultancy developing maintainable, interoperable technology, with archaeological robotics as its long-term research direction.',
   email: 'industrialautomata@proton.me',
+  github: 'https://github.com/kodai-bot',
   location: 'Ireland',
   registration: 'Registered business name in Ireland', // TODO: add RBN number if wanted
 };
 
 export const NAV = [
+  { href: '/about/', label: 'About' },
   { href: '/consulting/', label: 'Consulting' },
   { href: '/principles/', label: 'Principles' },
   { href: '/research/', label: 'Research' },

@@ -1,0 +1,38 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../site';
+---
+<Base title="About" description="About Industrial Automata and its founder, Dylan Foley: archaeologist, technologist and independent technical advisor based in Ireland.">
+  <article class="wrap">
+    <div class="prose">
+      <h1>About</h1>
+      <p class="lede">Industrial Automata is an independent technical advisory and research practice in Ireland, founded by Dylan Foley.</p>
+
+      <!-- DRAFT: built from facts in the workspace. Add career history, years of experience and anything personal you want public. -->
+
+      <h2>Dylan Foley</h2>
+      <p>I work where technology meets the problems people actually have. My background runs across information technology, archaeology and artificial intelligence. That's an unusual combination, and it shapes how I approach systems: as something to investigate carefully before deciding what to change.</p>
+      <ul>
+        <li>MSc in Computing (Big Data and Artificial Intelligence), Atlantic Technological University, 2024</li>
+        <li>BA in Archaeology</li>
+        <li>BA in Information Technology</li>
+        <li>Published research: IEEE Irish Signals and Systems Conference, 2025 (<a href="/research/">details</a>)</li>
+      </ul>
+
+      <h2>How we work</h2>
+      <p>"We" on this site means a team of one human and several AI collaborators. I lead the investigation, make the judgement calls and take responsibility for the advice. AI helpers research, draft, build and check alongside me. It's a working model we think will become normal, and the <a href="/principles/">principles</a> page explains why.</p>
+      <p>In practice, that means a small practice can take on careful, well-documented work that would once have needed a larger team, without hiding who is accountable for it.</p>
+
+      <h2>Work in the open</h2>
+      <p>Most of what I build is public, so you can judge the work directly rather than take my word for it. My <a href={SITE.github}>GitHub</a> is the closest thing to a portfolio:</p>
+      <ul>
+        <li><a href="https://github.com/kodai-bot/colophon">Colophon</a>: an open-source point-of-sale system running in a real bookshop (<a href="/notes/case-study-bookshop-pos/">case study</a>)</li>
+        <li><a href="https://github.com/kodai-bot/pu_ratchet_analysis">pu_ratchet_analysis</a>: analysis code accompanying the technological-evolution research</li>
+        <li><a href="https://github.com/kodai-bot/r2-astromech">r2-astromech</a>: autonomous network discovery for a maintenance-droid platform</li>
+        <li><a href="https://github.com/kodai-bot/industrial-automata-web">industrial-automata-web</a>: the source of this website</li>
+      </ul>
+
+      <p><a class="button primary" href="/contact/">Get in touch</a></p>
+    </div>
+  </article>
+</Base>
