@@ -21,6 +21,13 @@ and checked by the HTTP gateway.
 
 The current copy is **draft placeholder text**. Look for `DRAFT` and `TODO` comments.
 
+## Live
+
+- Mainnet canister: `ocf4n-cyaaa-aaaag-azdua-cai`, at <https://ocf4n-cyaaa-aaaag-azdua-cai.icp.net/>
+- Controller identity: `ia-mainnet` (principal `auo54-pke4r-aql5o-edvvx-nqphm-di73z-mhxed-oyjey-cggml-m3oni-mae`)
+- Update: `git pull && icp deploy -e ic --identity ia-mainnet`
+- Cycles: `icp canister status website -e ic --identity ia-mainnet`, top up with `icp canister top-up website --amount 1t -e ic --identity ia-mainnet`
+
 ## Develop
 
 ```bash
