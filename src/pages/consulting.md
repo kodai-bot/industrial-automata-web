@@ -86,6 +86,6 @@ A good solution may be sophisticated.
 
 It may also be a spreadsheet, a small Python program, an existing piece of software, a change to the workflow—or no new technology at all.
 
-**Example:** [a zero-cost Linux point-of-sale system](/notes/case-study-bookshop-pos/) for a volunteer-run bookshop, built with the staff who use it.
+**Example:** [Colophon](/notes/case-study-bookshop-pos/), a zero-cost Linux point-of-sale system for a volunteer-run bookshop, built with the staff who use it.
 
 <p><a class="button primary" href="/contact/">Discuss a problem</a></p>

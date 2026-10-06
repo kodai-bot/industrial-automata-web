@@ -1,12 +1,12 @@
 ---
-title: "Case study: a point-of-sale system for a small bookshop"
+title: "Case study: Colophon, a point-of-sale system for a small bookshop"
 date: 2026-10-02
 description: A zero-cost Linux point-of-sale system for a volunteer-run bookshop, built with the staff who use it and designed so a non-technician can recover it.
 ---
 
 **The problem.** A small, volunteer-run bookshop in Ireland recorded stock and sales with pen and paper. It sells a handful of items a day and has no IT budget. Subscription POS products cost too much for that volume, and open-source alternatives assume someone to administer a web server and database.
 
-**What we built.** An open-source point-of-sale system: a single Python program with a terminal interface. It runs on a Linux laptop the shop already owned.
+**What we built.** [Colophon](https://github.com/kodai-bot/colophon), an open-source (AGPL-3.0) point-of-sale system: a single Python program with a terminal interface. It runs on a Linux laptop the shop already owned.
 - A USB barcode scanner reads ISBNs and in-house codes into a local SQLite catalog.
 - A thermal receipt printer prints receipts and opens the cash drawer.
 - Every night, cron writes CSV reports to the office share and takes a backup.
@@ -29,3 +29,5 @@ There is no cloud account and no subscription, and the shop's data stays on its 
 - it can be repaired remotely.
 
 It will run alongside the laptop for a few days before the old till is retired.
+
+The code is public, so you can [read it on GitHub](https://github.com/kodai-bot/colophon).
