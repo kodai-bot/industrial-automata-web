@@ -23,6 +23,7 @@ The current copy is **draft placeholder text**. Look for `DRAFT` and `TODO` comm
 
 ## Live
 
+- **https://industrial-automata.com** and **https://www.industrial-automata.com**, registered with the IC custom-domain service on 2026-10-06. TLS is Let's Encrypt via the IC and renews automatically, so keep the `_acme-challenge` CNAMEs and the `_canister-id` TXT records in Cloudflare, with Universal SSL off and records DNS only.
 - Mainnet canister: `ocf4n-cyaaa-aaaag-azdua-cai`, at <https://ocf4n-cyaaa-aaaag-azdua-cai.icp.net/>
 - Controller identity: `ia-mainnet` (principal `auo54-pke4r-aql5o-edvvx-nqphm-di73z-mhxed-oyjey-cggml-m3oni-mae`)
 - Update: `git pull && icp deploy -e ic --identity ia-mainnet`
@@ -45,7 +46,7 @@ icp deploy             # builds and syncs dist/ to the canister
 icp network stop
 ```
 
-## Going live (not done yet)
+## Going live (done 2026-10-06; kept for reference)
 
 1. **Mainnet identity with cycles.** Create a password-protected identity with `icp identity new mainnet --storage password`. Send it ICP from the NNS dapp (address from `icp identity account-id --identity mainnet`), then convert the ICP to cycles (see the `cycles-management` ICP skill).
 2. **Deploy.** Run `icp deploy -e ic --identity mainnet`. The site is then at `https://<canister-id>.icp.net`. The canister ID is stored in `.icp/data/`, which **is** committed.
