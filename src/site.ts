@@ -1,7 +1,7 @@
 // Site-wide details. Change them here once; every page reads from this file.
 export const SITE = {
   name: 'Industrial Automata',
-  tagline: 'Systems consulting. Building toward robotics for archaeology.',
+  tagline: 'Independent technical advice. Building toward robotics for archaeology.',
   description:
     'Industrial Automata is an Irish systems consultancy developing maintainable, interoperable technology, with archaeological robotics as its long-term research direction.',
   email: 'industrialautomata@proton.me',

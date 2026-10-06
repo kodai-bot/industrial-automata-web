@@ -2,7 +2,7 @@
 layout: ../layouts/Page.astro
 title: Independent Technical Advisory
 lede: Industrial Automata provides independent technical advice for organisations facing problems involving technology, data, automation and AI.
-description: Independent technical advice on technology, data, automation and AI, including client-side representation with contractors and suppliers. No solution to sell.
+description: Independent technical advice on technology, data, automation and AI, including client-side representation with contractors and suppliers.
 ---
 
 The starting point is not a product or a predetermined solution. It is the problem itself.
@@ -15,7 +15,7 @@ The starting point is not a product or a predetermined solution. It is the probl
 
 We investigate how a system actually works, identify the underlying problem, and recommend the most appropriate course of action. That may involve new technology, existing technology, automation, a specialist contractor—or sometimes doing nothing.
 
-We do not sell a particular technology or implementation service, so recommendations are independent of the products or contractors ultimately selected.
+We are not tied to any particular technology, product or supplier. On smaller projects we may carry out the work ourselves, but if another vendor is a better fit, we will say so. The recommendation does not depend on who ends up doing the work.
 
 ## What we can help with
 
@@ -85,7 +85,5 @@ Don't start by asking what technology to buy. Start by establishing what problem
 A good solution may be sophisticated.
 
 It may also be a spreadsheet, a small Python program, an existing piece of software, a change to the workflow—or no new technology at all.
-
-<p class="callout">Independent advice. No solution to sell.</p>
 
 <p><a class="button primary" href="/contact/">Discuss a problem</a></p>
