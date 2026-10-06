@@ -17,7 +17,7 @@ Dataset fingerprints anchored on a public blockchain, so anyone can check that a
 
 ## Universal maintenance
 
-Hardware and software designed to be opened, repaired and interfaced with, not sealed and replaced.
+Hardware and software designed to be opened, repaired and interfaced with, not sealed and replaced. See the [principles](/principles/) behind this.
 
 ## Status
 

@@ -76,7 +76,7 @@ img { max-width: 100%; height: auto; }
 .wordmark strong { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.01em; }
 .wordmark span { font-size: 0.62rem; font-weight: 600; letter-spacing: 0.42em; margin-top: 0.3rem; }
 
-.site-nav ul { display: flex; gap: 1.25rem; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
+.site-nav ul { display: flex; gap: 0.35rem 1.1rem; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
 .site-nav a { text-decoration: none; font-weight: 500; font-size: 0.95rem; }
 .site-nav a[aria-current='page'] { color: var(--accent); }
 
@@ -184,3 +184,22 @@ img { max-width: 100%; height: auto; }
   font-weight: 700;
   letter-spacing: -0.01em;
 }
+
+/* Numbered principle lists: <ol class="principles"> */
+.principles { list-style: none; counter-reset: principle; padding: 0; margin: 1.5rem 0; }
+.principles li {
+  counter-increment: principle;
+  position: relative;
+  padding: 0.9rem 0 0.9rem 3rem;
+  border-top: 1px solid var(--rule);
+}
+.principles li::before {
+  content: counter(principle, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 0.95rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--accent);
+}
+.principles li::marker { content: none; }
