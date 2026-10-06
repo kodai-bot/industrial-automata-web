@@ -4,7 +4,7 @@ export const SITE = {
   tagline: 'Systems consulting. Building toward robotics for archaeology.',
   description:
     'Industrial Automata is an Irish systems consultancy developing maintainable, interoperable technology, with archaeological robotics as its long-term research direction.',
-  email: 'hello@example.com', // TODO: replace with the business address before going live
+  email: 'industrialautomata@proton.me',
   location: 'Ireland',
   registration: 'Registered business name in Ireland', // TODO: add RBN number if wanted
 };
