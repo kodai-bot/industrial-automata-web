@@ -10,8 +10,7 @@ export const SITE = {
   icpAccount: '17388037a149b3303838f0ee2f961c7a78c0669bbacfe83188f9b94930416925',
   // Mainnet canister serving this site; the footer links to its public IC dashboard page.
   canisterId: 'ocf4n-cyaaa-aaaag-azdua-cai',
-  location: 'Ireland',
-  registration: 'Registered business name in Ireland', // TODO: add RBN number if wanted
+  location: 'Sligo, Ireland',
 };
 
 export const NAV = [
