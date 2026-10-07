@@ -25,6 +25,33 @@ Ideas to develop later. Not published on the site.
    - This needs a JS agent and a CSP change: add `connect-src 'self' https://icp-api.io` in `public/_headers`.
 6. Optional: a hash-based live provenance checker for any dataset, the broader version of the same page.
 
+## Accept ICP payments
+
+The audience for technical work is likely to include people already on the IC or holding crypto. Regular clients will pay by bank transfer, so crypto is an extra option, not a replacement.
+
+**1. Simple (do first):**
+- Add a "Pay with ICP" section to the Contact page with a receiving address and a QR code, generated at build time as a static SVG/PNG to keep the CSP strict.
+- Use a **dedicated receiving account** (e.g. a separate NNS account), not the `ia-mainnet` identity that controls the website canister. That keeps payments, accounting and site control apart.
+- The same principal can receive **ckUSDC** (stable, better for invoices) and **ckBTC**. Say which tokens are accepted.
+- Accounting: crypto received is income at its euro value on the day it arrives. Keep a simple record (date, amount, token, EUR value, invoice).
+
+**2. Advanced (only if crypto payments become regular):**
+- A small Motoko canister that issues one **subaccount per invoice**, watches the ledger for payment and marks invoices paid, giving automatic reconciliation with no processor fees.
+- Reference: the `icrc-ledger` ICP skill (ICRC-1/2 transfers and balances, ICP/ckBTC/ckUSDC ledgers).
+
+## Sideline: simple websites on the IC for clients
+
+The same stack (Astro + `@dfinity/static-site` + custom domain) costs roughly €10 of cycles for 2–3 years of hosting, against commercial hosts that charge extra for forms, plugins and payments. It's an offering for small businesses, clubs and sole traders that need a simple, fast, secure contact or brochure site.
+
+**Things to decide before offering it:**
+- **Template:** factor this repo into a reusable starter (tokens in `global.css`, details in `site.ts`, Markdown pages), with a per-client copy.
+- **Ownership and control:** the client owns their domain. The canister can have **two controllers** (client's identity and ours), so the client is never locked in, in line with Universal Maintenance Design.
+- **Cycles:** who tops up, and how. Options: a yearly care fee that includes top-ups, or a handover with a written top-up guide. Monitor balances (`icp canister status`) for all client canisters.
+- **Content updates:** clients edit Markdown via GitHub, or send changes for a small fee.
+- **DNS:** each client domain needs the three records per hostname (see the README's "Going live" section) and Cloudflare's Universal SSL off.
+- **Forms:** keep `mailto:` by default. A canister-backed form is an optional extra.
+- **Pricing:** a setup fee plus an optional care plan. The hosting cost itself is negligible.
+
 ## Smaller ideas
 
 - Add an ORCID iD link beside GitHub (About and Research pages, footer) once the ORCID record is filled in.
