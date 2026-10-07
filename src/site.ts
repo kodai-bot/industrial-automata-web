@@ -6,6 +6,7 @@ export const SITE = {
     'Industrial Automata is an Irish systems consultancy developing maintainable, interoperable technology, with archaeological robotics as its long-term research direction.',
   email: 'industrialautomata@proton.me',
   github: 'https://github.com/kodai-bot',
+  orcid: 'https://orcid.org/0009-0002-1230-4477',
   // ICP ledger account identifier for payments (NNS account "IA_Account"). Checksum verified 2026-10-07.
   icpAccount: '17388037a149b3303838f0ee2f961c7a78c0669bbacfe83188f9b94930416925',
   // Mainnet canister serving this site; the footer links to its public IC dashboard page.
