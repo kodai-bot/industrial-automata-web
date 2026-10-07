@@ -29,7 +29,9 @@ Ideas to develop later. Not published on the site.
 
 The audience for technical work is likely to include people already on the IC or holding crypto. Regular clients will pay by bank transfer, so crypto is an extra option, not a replacement.
 
-**1. Simple (do first):**
+**1. Simple: done 2026-10-07.** The Contact page shows the IA_Account ICP account identifier with a build-time QR code (ICP only). Remaining: add a ckUSDC/ckBTC ICRC-1 address if wanted (check whether NNS offers ckUSDC on IA_Account or only the main account).
+
+Original notes:
 - Add a "Pay with ICP" section to the Contact page with a receiving address and a QR code, generated at build time as a static SVG/PNG to keep the CSP strict.
 - Use a **dedicated receiving account** (e.g. a separate NNS account), not the `ia-mainnet` identity that controls the website canister. That keeps payments, accounting and site control apart.
 - The same principal can receive **ckUSDC** (stable, better for invoices) and **ckBTC**. Say which tokens are accepted.
