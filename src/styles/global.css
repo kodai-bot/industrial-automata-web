@@ -203,3 +203,12 @@ img { max-width: 100%; height: auto; }
   color: var(--accent);
 }
 .principles li::marker { content: none; }
+
+/* Pay with ICP block on the contact page */
+.pay { display: grid; gap: 1.25rem; grid-template-columns: 1fr; align-items: start; margin: 1.5rem 0; padding: 1.25rem; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); }
+@media (min-width: 36rem) { .pay { grid-template-columns: 10rem 1fr; } }
+.qr { width: 10rem; line-height: 0; }
+.qr svg { width: 100%; height: auto; border-radius: var(--radius); }
+.pay-label { margin: 0 0 0.35rem; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.address { display: block; font-family: var(--font-mono); font-size: 0.85rem; word-break: break-all; padding: 0.6rem 0.75rem; background: var(--bg); border: 1px solid var(--rule); border-radius: var(--radius); user-select: all; }
+.pay-note { font-size: 0.9rem; color: var(--muted); margin: 0.75rem 0 0; }

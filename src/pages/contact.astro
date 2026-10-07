@@ -1,6 +1,10 @@
 ---
+import QRCode from 'qrcode';
 import Base from '../layouts/Base.astro';
 import { SITE } from '../site';
+
+// Generated at build time: a static SVG, no client-side script.
+const icpQr = await QRCode.toString(SITE.icpAccount, { type: 'svg', margin: 1, errorCorrectionLevel: 'M' });
 ---
 <Base title="Contact" description={`Contact ${SITE.name}.`}>
   <article class="wrap">
@@ -11,6 +15,17 @@ import { SITE } from '../site';
       <p>Code and projects are on <a href={SITE.github}>GitHub</a>.</p>
       <h2>Details</h2>
       <p>{SITE.name}<br />{SITE.registration}<br />{SITE.location}</p>
+
+      <h2>Pay with ICP</h2>
+      <p>Invoices can be paid by bank transfer, or in ICP on the Internet Computer for clients who prefer it.</p>
+      <div class="pay">
+        <div class="qr" role="img" aria-label="QR code for the ICP account identifier" set:html={icpQr} />
+        <div>
+          <p class="pay-label">ICP account identifier</p>
+          <code class="address">{SITE.icpAccount}</code>
+          <p class="pay-note">Send ICP only, from the NNS app or any ICP wallet. Please email the invoice number and the transaction details once sent, so the payment can be matched.</p>
+        </div>
+      </div>
     </div>
   </article>
 </Base>
