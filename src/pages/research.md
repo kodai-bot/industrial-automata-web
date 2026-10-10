@@ -17,6 +17,8 @@ Applied to northwest Ireland, the framework found significant alignments between
 
 It builds on the MSc thesis *Unveiling the Past: Geospatial Techniques in Identifying Ancient Gaelic Territories* (Atlantic Technological University, 2024).
 
+Author profile: ORCID [https://orcid.org/0009-0002-1230-4477](https://orcid.org/0009-0002-1230-4477)
+
 ## Research strands
 
 ### Archaeological signal reconstruction

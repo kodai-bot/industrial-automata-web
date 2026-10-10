@@ -56,7 +56,7 @@ The same stack (Astro + `@dfinity/static-site` + custom domain) costs roughly â‚
 
 ## Smaller ideas
 
-- ORCID iD (0009-0002-1230-4477): on the About page since 2026-10-07. Could also go on the Research page and in the footer.
+- ORCID iD (0009-0002-1230-4477): on the About and Research pages since 2026-10-10.
 - Sitemap (`@astrojs/sitemap`), `robots.txt`, and an RSS feed for Notes.
 - Projects pages: Colophon, archaeology droid, provenance anchor.
 - Canister-backed contact form (low priority while `mailto:` works).
