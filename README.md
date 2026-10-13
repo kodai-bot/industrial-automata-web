@@ -28,6 +28,7 @@ The current copy is **draft placeholder text**. Look for `DRAFT` and `TODO` comm
 - Controller identity: `ia-mainnet` (principal `auo54-pke4r-aql5o-edvvx-nqphm-di73z-mhxed-oyjey-cggml-m3oni-mae`)
 - Update: `git pull && icp deploy -e ic --identity ia-mainnet`
 - Cycles: `icp canister status website -e ic --identity ia-mainnet`, top up with `icp canister top-up website --amount 1t -e ic --identity ia-mainnet`
+- Health check: `scripts/health.sh` (read-only: canister status, cycles runway, logs, account balances, HTTPS, certificates, domain registration). Add `--record` to log a line to `.health/history.csv` for trends.
 
 ## Develop
 

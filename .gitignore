@@ -28,3 +28,6 @@ pnpm-debug.log*
 
 # keys — never commit
 *.pem
+
+# health.sh --record history (per machine)
+.health/
