@@ -9,7 +9,7 @@ description: Why Industrial Automata uses the Internet Computer, why verifiable 
 
 This website is served from the Internet Computer, a public blockchain network that can host software and websites. We chose it for three reasons:
 
-- **Low cost.** Hosting this site costs a few euros' worth of compute a year, paid in advance.
+- **Low cost.** Hosting here is substantially cheaper than conventional web hosting.
 - **No dependence on a mainstream provider.** The site doesn't sit on any one company's servers or terms of service.
 - **A place to experiment.** The network certifies every response it serves, and it can record fingerprints of documents and datasets on a public ledger. We want to learn how well that works for authenticating real resources. The [launch note](/notes/site-launch/) explains how this site's own pages are certified.
 
@@ -31,6 +31,6 @@ It's worth being precise, because the limits matter as much as the strengths.
 
 - **Anchoring our own publications.** A prototype service that records document fingerprints on the Internet Computer is running in development. Papers and case studies published here will be anchored so anyone can verify their copy.
 - **Provenance from the point of capture.** Our [research](/research/) on field data capture is about recording observations with their context and provenance from the start, kept separate from later interpretation.
-- **Open standards.** We intend to work in line with the C2PA standard (Content Credentials), the industry specification for attaching verifiable provenance to images, video and documents, so records can be checked with widely available tools.
+- **Open records, not gatekeepers.** The C2PA standard (Content Credentials) was developed by a coalition of large technology and media companies to attach signed provenance to images, video and documents. It answers a real need, and we'll stay compatible with it where that helps people check a record. It is also an example of large firms agreeing the ground on which they will then compete, with trust resting on certificates they issue and recognise. A public ledger already provides an independent, verifiable record of when something existed, and no single company controls it.
 
 If your organisation needs records that can stand up to scrutiny, [get in touch](/contact/).
