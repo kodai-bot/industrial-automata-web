@@ -54,8 +54,31 @@ The same stack (Astro + `@dfinity/static-site` + custom domain) costs roughly â‚
 - **Forms:** keep `mailto:` by default. A canister-backed form is an optional extra.
 - **Pricing:** a setup fee plus an optional care plan. The hosting cost itself is negligible.
 
+## Migrate the blog off WordPress (proposal)
+
+The personal blog runs on WordPress on the home NAS, behind Cloudflare and the NAS reverse proxy, with self-hosted Umami analytics. Moving it to the same static setup as this site would mean:
+- **Simpler and safer:** no PHP, database or plugins to patch, so a much smaller attack surface, and nothing on the NAS exposed except static files (or nothing at all, if it moves to a canister).
+- **Easy to verify:** a static build is a fixed set of files, so every post can be hashed and the set anchored on the IC with `py_client`. That makes it a good first public provenance demonstration.
+
+**Steps:**
+1. Export the posts from WordPress (Tools â†’ Export, WXR file) and convert to Markdown with frontmatter, e.g. with `wordpress-export-to-markdown`. Download the media library alongside.
+2. Rebuild on this repo's Astro setup, factored as the starter planned for the client-website sideline. Keep post URLs, or add `_redirects` entries for any that change.
+3. Host it on its own `@dfinity/static-site` canister with its own custom domain (same DNS steps as this site), or as static files on the NAS. The canister removes the NAS from the public path entirely.
+4. Analytics: Umami needs its host in the CSP (`script-src` and `connect-src` in `_headers`). Alternatively, drop analytics, since the canister's query stats give a rough count.
+5. Hash every post at build time and anchor the set (`py_client`), once `anchor_mo` is on mainnet.
+6. Check that everything has moved, then retire WordPress and its database container.
+
+**To confirm:** the blog's domain and URL structure, and whether comments are in use (static sites have none by default).
+
+## Notes to write
+
+Private drafts live in the gitignored `drafts/` folder: they are never committed or built, because this repo is public. Publish a note by moving it into `src/content/notes/`.
+- Three essay outlines, on the regional economy of renting technology, the maintenance asymmetry between large firms and small organisations, and where lock-in now sits.
+- An office-tools pilot case study: measure the baseline now, and publish before/after results only once there are real numbers (client anonymised unless they agree to be named).
+
 ## Smaller ideas
 
+- Heritage (`/heritage/`) and Provenance (`/provenance/`) pages: drafted 2026-10-18.
 - ORCID iD (0009-0002-1230-4477): on the About and Research pages since 2026-10-10.
 - Sitemap (`@astrojs/sitemap`), `robots.txt`, and an RSS feed for Notes.
 - Projects pages: Colophon, archaeology droid, provenance anchor.

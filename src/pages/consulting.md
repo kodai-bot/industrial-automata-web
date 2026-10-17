@@ -70,6 +70,8 @@ The contractor remains responsible for doing the technical work. We ensure that 
 
 This can include helping organisations select contractors, assess proposals, define requirements and oversee implementation.
 
+It suits public bodies and other large institutions too, when they need an independent technical view on IT proposals, tenders or procurement decisions.
+
 ## Archaeology
 
 The same investigative approach is applicable to archaeological projects.
@@ -87,5 +89,7 @@ A good solution may be sophisticated.
 It may also be a spreadsheet, a small Python program, an existing piece of software, a change to the workflow—or no new technology at all.
 
 **Example:** [Colophon](/notes/case-study-bookshop-pos/), a zero-cost Linux point-of-sale system for a volunteer-run bookshop, built with the staff who use it.
+
+Work can be delivered remotely, in Ireland or abroad.
 
 <p><a class="button primary" href="/contact/">Discuss a problem</a></p>

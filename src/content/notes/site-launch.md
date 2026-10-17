@@ -8,4 +8,4 @@ This site is a folder of static files served from a canister on the Internet Com
 The canister certifies every response, and the HTTP gateway checks that certificate before the page reaches your browser.
 That means what you see is what was deployed, with nothing altered in transit.
 
-That matters to us because provenance, being able to show where data came from and that it hasn't changed, is central to the archaeological work this company is building toward.
+That matters to us because provenance, being able to show where data came from and that it hasn't changed, is central to the archaeological work this company is building toward. The [provenance](/provenance/) page sets out why, and where the limits are.

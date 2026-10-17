@@ -31,3 +31,6 @@ pnpm-debug.log*
 
 # health.sh --record history (per machine)
 .health/
+
+# private drafts: never committed or built (public repo)
+drafts/

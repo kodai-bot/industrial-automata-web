@@ -101,6 +101,8 @@ img { max-width: 100%; height: auto; }
 .hero .gear { display: none; width: min(100%, 18rem); height: auto; justify-self: center; opacity: 0.9; }
 @media (min-width: 48rem) { .hero .gear { display: block; } }
 .eyebrow, .hero .eyebrow { max-width: none; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin: 0 0 1rem; }
+.hero .thesis { color: var(--text); font-weight: 600; margin-bottom: 0.75rem; }
+.intro p { max-width: var(--measure); font-size: 1.1rem; margin: 0 0 1.5rem; }
 
 .actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
 .button {

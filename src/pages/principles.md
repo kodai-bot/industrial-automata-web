@@ -2,10 +2,8 @@
 layout: ../layouts/Page.astro
 title: Principles
 lede: Technology is multiplying faster than people can look after it. We think the answer is to design it so humans, machines and AI helpers can all understand it, maintain it and work on it together.
-description: Universal Robotic Design and Universal Maintenance Design, the principles behind Industrial Automata, and what "we" means on this site.
+description: Universal Robotic Design, Universal Maintenance Design and ownership, the principles behind Industrial Automata, and what "we" means on this site.
 ---
-
-<!-- DRAFT: condensed from universal_robotic_design.md and the Universal Maintenance Design framework. Edit freely. -->
 
 Connected devices, sensors and gadgets are arriving faster than anyone can keep track of them. Each one has its own interface, its own failure modes and its own manufacturer-specific way of being fixed. The burden of making it all work falls on people, and it is becoming overwhelming.
 
@@ -39,9 +37,19 @@ Most equipment is designed to be maintained only by a human with the manufacture
 
 The test is simple: a system designed this way should be easier to look after for *everyone*, not only for robots.
 
+## Ownership
+
+Maintenance only means something if you own the thing being maintained. Organisations should own their technology, data and skills rather than rent them.
+
+<ol class="principles">
+  <li><strong>We charge for maintenance, never for access.</strong> You pay for work done: building, fixing, improving. You never pay to reach your own data or keep using your own system. You can always leave with your data, your software and its documentation.</li>
+  <li><strong>Exit is a feature.</strong> Every system we build is documented well enough that another competent person could take it over. If you never need to use that, good. It still keeps us honest.</li>
+  <li><strong>Universal maintainability.</strong> The largest technology companies run their own operations on open-source software they can inspect, modify and repair. Smaller organisations are usually sold closed, rented versions of the same capability. Our aim is to bring that kind of internal maintainability to organisations too small to have an IT team of their own.</li>
+</ol>
+
 ## In practice, today
 
-The same principles shape our consulting work now, long before any robot arrives. That means preferring systems that are documented, standard and repairable; avoiding lock-in; and making sure the people who rely on a system can understand what it is doing.
+These principles shape our consulting work now, long before any robot arrives. In practice that means documented, standard, repairable systems; open formats for data; and making sure the people who rely on a system can understand what it is doing.
 
 ## Who "we" are
 

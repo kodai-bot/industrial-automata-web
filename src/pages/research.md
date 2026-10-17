@@ -45,7 +45,7 @@ Hardware and software designed to be opened, repaired and interfaced with by peo
 
 ### Provenance on the Internet Computer
 
-Dataset fingerprints anchored on a public blockchain, so anyone can check that an archive hasn't changed since it was recorded. A prototype anchoring service is running in development, and this website is itself served with cryptographic certification from the Internet Computer.
+Dataset fingerprints anchored on a public blockchain, so anyone can check that an archive hasn't changed since it was recorded. A prototype anchoring service is running in development, and this website is itself served with cryptographic certification from the Internet Computer. See [provenance](/provenance/) for what this can and can't prove.
 
 ## Collaboration
 
